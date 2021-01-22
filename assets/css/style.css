@@ -29,9 +29,25 @@ body, main{
 
 }
 
+h1{
+    font-size: 2em;
+    font-weight: 100;
+    opacity: .8;
+    line-height: 130%;
+    letter-spacing: 1px;
+}
+
+p{
+    padding: 0;
+    margin: 0;
+    color: #867772;
+    line-height: 180%;
+    /* font-size: 1.2em; */
+}
+
 
 /* * ****************************** */
-/* *         FIRST PAGE             */
+/* *         FIRST PAGE -  NAV+ HEADER            */
 /* * ****************************** */
 
 
@@ -57,15 +73,15 @@ body, main{
 }
 
 .logo{
-    font-size: 3em;
+    font-size: 2em;
     display: inline-block;
     /* padding: 30px 0 10px 10%; */
     padding-left: 5%;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 .logo img{
-    width: 50px;
+    width: 40px;
 }
 
 .logo:hover{
@@ -76,7 +92,7 @@ body, main{
 ul{
     list-style: none;
     display: inline-block;
-    padding-right: 2%;
+    /* padding-right: 2%; */
     /* margin-top: 28px; */
     width: 40%;
     float: right;
@@ -151,8 +167,11 @@ ul li a:hover{
 
 #verti_nav_wrapper li a{
     font-size: .8em;
-    padding-left: 15px;
+    padding-left: 35px;
 }
+
+
+    /* *  OUTER CIRCLE!! */
 
 .small_circle{
     box-sizing: border-box;
@@ -164,7 +183,6 @@ ul li a:hover{
     border: 1px rgba(235,204,194,.1) solid;
     /* opacity: .2; */
     border-radius: 5px;
-    /* !  OUTER CIRCLE!! */
     /* box-shadow: 0 0 1px 2px #2e2e2e, 0 0 1px 3px #ebccc2; */
 }
 
@@ -191,24 +209,32 @@ ul li a:hover{
     
 }
 
+
+
 /* * ------------- */
-/* *         HIGHLIGHT ACTIVE LINK           */
+/* *         HIGHLIGHT ACTIVE LINK    FOR REUSE!!!         */
 /* * ------------- */
-#verti_nav_wrapper li:first-child .small_circle{
+/* !          FOR CHANGE in other pages */
+
+#verti_nav_wrapper #diffe .small_circle{
     box-shadow: 0 0 1px 2px #2e2e2e, 0 0 1px 3px rgba(235,204,194,1);
 }
-#verti_nav_wrapper li:first-child a{
+#verti_nav_wrapper #diffe a{
     color:#ebccc2;
     opacity: .8;
 }
 
+/* !---------- */
+/* #different_style{
+    box-shadow: 0 0 1px 2px #2e2e2e, 0 0 1px 3px rgba(235,204,194,1)
+} */
 
 
 
 
 
 
-
+/* *   vertical lines  */
 /* ?   HOW TO MAKE THOSE LINES BETTER for responsive design ? */
 .line_down{
     top: 20px;
@@ -217,19 +243,220 @@ ul li a:hover{
     width: 1px;
     height: 350%;
     background: #867772;
-    opacity: .5;
+    opacity: .2;
 }
 
 /* *    Line positions vertical menu - for case of not absolute - relatice positions */
-#numr2{
-    /* top: 107px; */
+/* #numr2{
+    top: 107px;
 }
 #numr3{
-    /* top: 194px; */
+    top: 194px;
 }
 #numr4{
-    /* top: 280px; */
+    top: 280px;
+} */
+
+
+/* *     Phrase between menus */
+header h1{
+
+    padding-top: 10%;
+    padding-left: 30%;
+    width: 350px;
+
+
 }
+
+
+/* * ****************************** */
+/* *         MAIN  -   PAGE   index.      */
+/* * ****************************** */
+
+/* * PICTURE */
+.first_page_index{
+    background: url("../img/section-about-1.jpg") center/cover no-repeat;
+    height: 100vh;
+    width: 90%;
+    margin-left: 65px;
+    margin-top: 8%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* * LAST PART of INDEX / ABOUT  */
+
+.last_page_index{
+    height: 75vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    /* padding-left: 10%; */
+    padding-bottom: 155px;
+}
+
+.last_page_index article{
+    display: inline-block;
+    width: 90vw;
+    height: 45vh;
+}
+
+.last_page_index article img{
+    display: inline-block;
+    width: 70%;
+    padding-left: 30%;
+}
+
+.last_page_index article h1, p{
+    display: inline-block;
+    width: 65%;
+    padding-left: 10%;
+    
+
+}
+
+.last_page_index article h1{
+    padding-top: 5%;
+}
+
+.last_page_index article p{
+    font-size: 1.2em;
+}
+
+
+/* * ****************************** */
+/* *         MAIN  -   PAGE   LOUNGER, EXPO, SHOP   +++!!!    */
+/* * ****************************** */
+
+.split_both{
+    width: 100wh;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+
+.split_img{
+    display: inline-block;
+    width: 55vw;
+    height: 100vh;
+    /* background: red; */
+    
+}
+
+.split_img img{
+    display: inline-block;
+    width: 100vw;
+    height: 100vh;
+    left:-100px;
+
+}
+
+#bg_lounge{
+    background: url("../img/section-voyager.jpg") center/cover no-repeat;
+    background-color: rgba(0,0,0,.3);
+    background-blend-mode: multiply;
+}
+
+.split_text {
+    width: 45vw;
+    height: 100vh;
+    background-color: #2e2e2e;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.split_text p, .split_text h1{
+    width: 35vw;
+    display: inline-block;
+    padding-left: 4vw;
+    padding-right: 15px;
+}
+
+.split_text h1{
+    padding-bottom: 8vh;
+    padding-top: 0;
+    margin-top: 0;
+
+}
+
+.split_text p{
+    padding-bottom: 15px;
+}
+
+
+/* *    EXPERIENCE PAGE MODS */
+
+
+#bg_experience{
+    background: url("../img/section-experience-1.jpg") center/cover no-repeat;
+    background-color: rgba(0,0,0,.3);
+    background-blend-mode: multiply;
+}
+
+/* *    SHOP PAGE MODS */
+
+#bg_shop{
+    background: url("../img/section-composition4.jpg") center/cover no-repeat;
+    background-color: rgba(0,0,0,.3);
+    background-blend-mode: multiply;
+}
+
+#shop_vision{
+    /* box-sizing: border-box; */
+    display: inline-block;
+    text-align: center;
+    /* padding-top: 15%; */
+}
+#shop_vision p, #shop_vision h1, #shop_vision img{
+    padding: 0;
+    margin: 0;
+    padding-left: 50px;
+}
+
+#shop_vision p{
+    color: #867772;
+}
+
+#shop_vision #grey_text1{
+    display: inline-block;
+    margin-bottom: 10px;;
+}
+
+#shop_vision h1{
+    margin-bottom: 5px;
+}
+
+#shop_vision a{
+    display: inline-block;
+    text-decoration: none;
+    color: #2e2e2e;
+    padding: 10px 25px;
+    background-color: #ebccc2;
+    border-radius: 3px;
+    font-size: 0.7em;
+    margin-left: 50px;
+}
+
+#shop_vision a:hover{
+    color: rgb(43, 112, 49);
+    transition: 1s;
+}
+
+#shop_vision img{
+    padding-top: 10%;
+    width: 70%;
+}
+
+
+
 
 
 
