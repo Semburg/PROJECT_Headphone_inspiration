@@ -1,0 +1,236 @@
+/* * ****************************** */
+/* *            FONTS               */
+/* * ****************************** */
+
+@font-face{
+    font-family: 'Work Sans', sans-serif;
+    src: url("../fonts/WorkSans-VariableFont_wght.ttf");
+}
+@font-face{
+    font-family: 'Work Sans IT', sans-serif;
+    src: url("../fonts/WorkSans-Italic-VariableFont_wght.ttf");
+}
+
+
+/* * ****************************** */
+/* *      GENERAL PROPERTIES        */
+/* * ****************************** */
+
+html{
+    scroll-behavior: smooth;
+}
+
+body, main{
+    margin: 0;
+    padding: 0;
+    background: #2e2e2e;
+    color: #ebccc2;
+    font-family: 'Work Sans', sans-serif;
+
+}
+
+
+/* * ****************************** */
+/* *         FIRST PAGE             */
+/* * ****************************** */
+
+
+/* * ------------- */
+/* *         Horizontal nav            */
+/* * ------------- */
+
+
+.nav-wrapper{
+    
+    position: fixed;
+    z-index: 100;
+    top:0;
+    left:0;
+    right: 0; 
+    color: #ebccc2;
+
+    vertical-align: baseline;
+
+
+    border-top: 2px #111 solid;
+    height: 76px;
+}
+
+.logo{
+    font-size: 3em;
+    display: inline-block;
+    /* padding: 30px 0 10px 10%; */
+    padding-left: 5%;
+    padding-top: 20px;
+}
+
+.logo img{
+    width: 50px;
+}
+
+.logo:hover{
+    color: #333;
+    text-decoration: none;
+    list-style: none;
+}
+ul{
+    list-style: none;
+    display: inline-block;
+    padding-right: 2%;
+    /* margin-top: 28px; */
+    width: 40%;
+    float: right;
+    /* padding-left: 120px; */
+
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+ul li{
+    display: inline-block;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+ul li:first-child{
+    margin-right: 30px;
+}
+ul li:last-child{
+    margin-left: 40px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #867772;
+}
+
+ul li a:hover{
+    color: #ebccc2;
+    text-decoration: underline;
+    transition: 0.4s;
+}
+
+/* * ------------- */
+/* *         Vertical nav            */
+/* * ------------- */
+
+#vertical_nav{
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    top:50%;
+    left:0;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start;
+    align-items: center; */
+}
+
+
+#verti_nav_wrapper{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 50vh;
+    position: fixed;
+    top:30vh;
+    left: 20px;
+
+
+}
+#verti_nav_wrapper li{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#verti_nav_wrapper li a{
+    font-size: .8em;
+    padding-left: 15px;
+}
+
+.small_circle{
+    box-sizing: border-box;
+    padding: 2px;
+    margin: 0;
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border: 1px rgba(235,204,194,.1) solid;
+    /* opacity: .2; */
+    border-radius: 5px;
+    /* !  OUTER CIRCLE!! */
+    /* box-shadow: 0 0 1px 2px #2e2e2e, 0 0 1px 3px #ebccc2; */
+}
+
+#verti_nav_wrapper li a{
+    text-decoration: none;
+}
+
+#verti_nav_wrapper li a:hover{
+    color: #ebccc2;
+}
+
+/* !   ISSUE ONE  */
+/* ?   WHY THIS commented stroke below DOEs NOT WORK?  meant the hover effect with neigbor */
+
+/* #verti_nav_wrapper li a:hover ~ .small_circle{
+    box-shadow: 0 0 1px 2px #2e2e2e, 0 0 1px 3px rgba(235,204,194,1);
+} */
+
+/* ? BUT THIS DOES -   from parent to child*/
+
+#verti_nav_wrapper li:hover  .small_circle{
+    box-shadow: 0 0 1px 2px #2e2e2e, 0 0 1px 3px rgba(235,204,194,1);
+    transition: 1s;
+    
+}
+
+/* * ------------- */
+/* *         HIGHLIGHT ACTIVE LINK           */
+/* * ------------- */
+#verti_nav_wrapper li:first-child .small_circle{
+    box-shadow: 0 0 1px 2px #2e2e2e, 0 0 1px 3px rgba(235,204,194,1);
+}
+#verti_nav_wrapper li:first-child a{
+    color:#ebccc2;
+    opacity: .8;
+}
+
+
+
+
+
+
+
+
+/* ?   HOW TO MAKE THOSE LINES BETTER for responsive design ? */
+.line_down{
+    top: 20px;
+    left: 4px;
+    position: absolute;
+    width: 1px;
+    height: 350%;
+    background: #867772;
+    opacity: .5;
+}
+
+/* *    Line positions vertical menu - for case of not absolute - relatice positions */
+#numr2{
+    /* top: 107px; */
+}
+#numr3{
+    /* top: 194px; */
+}
+#numr4{
+    /* top: 280px; */
+}
+
+
+
+
