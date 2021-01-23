@@ -29,12 +29,17 @@ body, main{
 
 }
 
-h1{
+h1, h4{
     font-size: 2em;
     font-weight: 100;
     opacity: .8;
     line-height: 130%;
     letter-spacing: 1px;
+}
+
+h4{
+    font-size: 1em;
+
 }
 
 p{
@@ -456,8 +461,113 @@ header h1{
 }
 
 
+/* *    INSPIRATION PAGE  */
+
+#wrapper_inspiration{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+#num_inpiration1 video{
+    display: block;
+}
+
+.width_definer{
+    display: flex;
+    width: 80vw;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    /* background: chocolate; */
+}
+
+#num_inpiration1{
+    display: flex;
+    flex-direction: column;
+}
+
+#num_inpiration2{
+    width: 60%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+#num_inpiration2 p, #num_inpiration2 h1, #num_inpiration2 h4{
+    padding: 0;
+    margin: 0;
+}
+
+#num_inpiration2 h4{
+    margin-top: 100px;
+}
+
+#wrapper_inspiration h1{
+    margin-top: 10px ;
+    margin-bottom: 30px;
+}
+
+#num_inpiration2 a{
+    display: inline-block;
+    text-decoration: none;
+    color:#867772;
+    font-size: 0.7em;
+    padding: 3px 6px;
+    border: 1px #ebccc2 solid ;  
+    margin-bottom: 10px;
+    
+}
+
+#num_inpiration2 p{
+    margin-bottom: 70px;
+}
+
+/* * last 2 blocks */
+#num_inpiration3,  #num_inpiration4{
+    width: 60%;
+    height: 59.5vh;
+}
+
+#num_inpiration3 h1, #num_inpiration3 h4, #num_inpiration3 p,
+#num_inpiration4 h1, #num_inpiration4 h4, #num_inpiration4 p{
+    padding-left: 0;
+    margin-left: 0;
+    width: 100%;
+}
+
+#num_inpiration3 h4,  #num_inpiration4 h4{
+    margin-bottom: 0;
+}
+#num_inpiration3 h1,  #num_inpiration4 h1{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
 
 
 
+#num_inpiration3 {
+    background-color: coral ;
+    background: url("../img/ETC_6.webp") left/contain no-repeat;
+    padding-left: 32%;
+    box-sizing: border-box;
+    /* text-align: left; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#num_inpiration4 {
+    background: red ;
+    background: url("../img/ETC_5.webp") right/contain no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-
+#num_inpiration4 p{
+    box-sizing: border-box;
+    padding-right: 35vw;
+}
