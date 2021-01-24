@@ -20,7 +20,7 @@
             <div class="nav-wrapper">
                 <a href="#" class="logo"> <img src="../img/logo.svg" alt=""> </a>
                 <ul>
-                    <li><a href="../html/subscribe.html">Subscribe & Contact</a></li>
+                    <li id="subscr_activ"><a  href="#About-the-tests">Subscribe & Contact</a></li>
 
                     <li><a href="#home">facebook</a></li>
                     <li><a href="#blog">Twitter</a></li>
@@ -44,9 +44,9 @@
                     <div class="line_down"></div>
 
                 </li>
-                <li id = "diffe"> 
+                <li>
                     <div class="small_circle"></div>
-                    <a href="#home">LOUNGER</a>
+                    <a href="../../assets/html/lounger.html">LOUNGER</a>
                     <div id="numr2" class="line_down"></div>
                 </li>
                 <li>
@@ -54,9 +54,9 @@
                     <a href="../../assets/html/experience.html">EXPERIENCE</a>
                     <div id="numr3" class="line_down"></div>
                 </li>
-                <li>
+                <li id="diffe">
                     <div class="small_circle"></div>
-                    <a href="../../assets/html/inspiration.html">INSPIRATIONN</a>
+                    <a href="#">INSPIRATIONN</a>
                     <div id="numr4" class="line_down"></div>
                 </li>
                 <li>
@@ -68,33 +68,52 @@
 
         </nav>
 
-        
+
     </header>
 
-        <!-- *-------------------------------------- -->
-        <!-- *   ******      MAIN      ******        -->
-        <!-- *-------------------------------------- -->
+    <!-- *-------------------------------------- -->
+    <!-- *   ******      MAIN      ******        -->
+    <!-- *-------------------------------------- -->
 
     <main>
+        <section id="signForm" class="center_all">
 
-        <section class="split_both">
+            <form id="" action="">
+                <input type="email" name="Email" id="emailHTML" pattern=".+@globex.com"
+                    placeholder="Write your email here" required>
+                <input type="button" value="subscribe" onclick="subscribeConfirmation()">
+                <!-- <textarea name="mail_sub" id="text_sub" cols="30" rows="10"></textarea> -->
 
-            <article id="bg_lounge" class="split_img" >
-            </article>
+            </form>
 
-            <article id="lounge_text" class="split_text">
-                <h1>The Lounger </h1>
-                <p>The Lounger is your trans-sensory vessel to audio-haptic pleasure. Precision sculpted from luxe material, this high-tech pod is calibrated for comfort and inspired by the Japanese art of origami. Through its seamlessly integrated tablet, it delivers a rich and varied playlist of full-body experiences, with tracks updated monthly. </p>  
-                <p> Produced in the Eu, this limited edition lounger is suitable for events, clubs, airlines, hotels, workplaces and indulgence-seeking individuals. </p>
-                <p>Available from February 2018</p>
-            </article>
+            <form action="">
+                <textarea name="mail_sub" id="text_sub" cols="50" rows="10" placeholder="Ihre Mitteilung an uns." ></textarea>
+
+            </form>
+
+
+
 
         </section>
 
 
-    </main>
-    <script src="../js/main.js"></script>
+        <!-- ***************       -->
+        <!--*               Email Form and confirmation                   -->
 
+        <section id="after-confirm">
+            <article id="after-confirm2">
+
+                <h2>YOUR EMAIL HAS BEEN CONFIRMED</h2>
+                <h2>THANKS FOR SUBSCRIBNG</h2>
+                <p>Now we just need to confirm your email address - please click the link in the email we sent you.Thanks!</p>
+                <a href="../../index.html">Back to Main</a>
+
+            </article>
+        </section>
+    </main>
+
+
+    <script src="../js/main.js"></script>
 </body>
 
 </html>

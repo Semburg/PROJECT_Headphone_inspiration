@@ -571,3 +571,171 @@ header h1{
     box-sizing: border-box;
     padding-right: 35vw;
 }
+
+/* ****************                  Sryling FORMs             ************ */
+
+
+
+
+input[type="email"]{
+    box-sizing: border-box;
+    outline: none;
+    display: block;
+    text-align: center;
+    padding: 10px 100px;
+    margin-bottom: 50px;
+    font-size: 1.2em;
+    border:none;
+    
+}
+
+input[type="button"]{
+    box-sizing: border-box;
+    outline: none;
+    text-align: center;
+    padding: 10px 50px;
+    margin-bottom: 50px;
+    background-color: #867772;
+    color:white;
+    box-shadow: none;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 3px;
+}
+
+#text_sub {
+    display: inline-block;
+}
+
+
+
+/* ?            Transition by buttons doenst work? */
+input[type="button"]:hover{
+    cursor: pointer;
+    background:linear-gradient(to right,#867772, #ebccc2);
+    transition: 5s;
+}
+
+#signForm{
+    height: 85vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 100px;
+}
+
+
+/* *         Confirmation page           */
+#after-confirm{
+    width: 100vw;
+    height: 90vh;
+    display: none;
+}
+
+#after-confirm2{
+    width: 100vw;
+    height: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#after-confirm2 p{
+    padding:0;
+    margin-bottom: 40px;
+}
+
+#after-confirm2 a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 30px;
+    margin-bottom: 40px;
+    background-color: #867772;
+    color:#ebccc2;
+    box-shadow: none;
+    font-size: 0.8em;
+    border: none;
+    border-radius: 3px;
+}
+
+#after-confirm2 a:hover{
+    cursor: pointer;
+    background:linear-gradient(to right,#867772, #ebccc2);
+    transition: 5s;
+}
+
+#subscr_activ a{
+    text-decoration: underline;
+    color:#ebccc2;
+}
+
+
+
+
+
+
+
+
+
+
+/* * ****************************** */
+/* *         MEDIAQUERIES           */
+/* * ****************************** */
+
+@media screen and (max-width: 1190px){
+    
+    ul{
+        width: 50%;
+    }
+
+    .last_page_index article:first-child{
+        display: inline-block;
+        width: 75vw;
+        height: 65vh;
+    }
+
+    .last_page_index article h1{
+        padding-top: 0;
+        margin-top: 0;
+        width: 55vw;
+    }
+
+}
+@media screen and (max-width: 955px){
+    
+    ul{
+        width: 70%;
+    }
+    .split_text{
+        padding-top: 20%;
+    }
+    #num_inpiration1 video{
+        width: 640px;
+        height: 480px;
+        margin-left: 20%;
+        margin-top: 20%;
+    }
+    
+}
+@media screen and (max-width: 679px){
+    
+    ul{
+        width: 90%;
+    }
+    .logo{
+        
+        padding-left: 45%;
+        padding-top: 30px;
+    }
+    header h1{
+        padding-top: 25%;
+    }
+    .split_text{
+        padding-top: 400px;
+    }
+}
